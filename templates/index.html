@@ -6,461 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <title>英语学习平台</title>
-    <script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <link rel="stylesheet" href="css/mutual.css">
+    <title>index</title>
 
-        
-  
-    </script>
-    <style>
-        body{
-            background: rgb(255,189,146);
-background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.8580474426098564) 51%, rgba(177,72,16,0.85) 90%);
-        }
-        :root{
-            --orange:rgb(100,100,100)
 
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            }
-        
-            a {
-            color: #262626;
-            text-decoration: none;
-            }
-
-            ul {
-            list-style: none;
-            }
-
-
-        /* Nav */
-            .main-nav {
-            position:fixed;
-            top:0; left:0; right:0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 46px;
-            padding: 20px 150px 20px 120px;
-            z-index:1000;
-            font-size: 18px;
-            align-content: center;
-            background-color:rgb(243, 237, 219);
-            -webkit-box-shadow: 0px -1px 17px -2px rgba(189,189,189,0.82);
-            -moz-box-shadow: 0px -1px 17px -2px rgba(189,189,189,0.82);
-            box-shadow: 0px -1px 17px -2px rgba(189,189,189,0.82);
-
-            }
-
-
-
-            .main-nav .logo {
-            width: 60px;
-            padding:10px;
-            color:blue;
-            }
-
-            
-             .logo i{
-                 width:10px;
-                color:green;
-            }
-
-            .main-nav ul {
-            display: flex;
-            }
-
-            .main-nav ul li {
-            padding: 0 20px;
-            }
-
-            .main-nav ul li a {
-                padding-bottom: 2px;
-                font-size:1.3rem;
-                border-radius:.5rem;
-                padding:.5rem 1.5rem;
-                color:darkslateblue;
-            }
-
-            .main-nav ul li a:hover {
-                border-bottom: 2px solid lightgrey;
-                color:#fff;
-                background:darkorange;
-            }
-
-            .main-nav ul.main-menu {
-            flex: 1;
-            margin-left: 20px;
-            width:800px;
-            margin:0px auto;
-            }
-
-            .main-nav .icons{
-                display:flex;
-                font-size:1.7rem;
-                border-radius:0.5rem;
-                padding:.5rem 1rem;
-            }
-
-
-
-            .main-nav .icons a{
-                cursor:pointer;
-                line-height:2.5rem;
-                text-align:center;
-                margin-right:1rem;
-                width:2.5rem;
-                font-size:1.7rem;
-                border-radius: 30%;
-
-            }
-
-            .main-nav .icons a:hover{
-                background-color: lightgray;
-            }
-
-
-            .bg {
-            background: url('images/pic3.png');
-            color:white;
-            background-size: cover;
-            background-position: center;
-            height:400px;
-            width: 1400px;
-            }
-
-            .bg {
-                display: grid;
-                grid-gap: 20px;
-                grid-template-areas:
-                    'showcase showcase top-box-a'
-                    'showcase showcase top-box-b';
-                }
-
-                /* Showcase */
-            .bg1 {
-                grid-area: showcase;
-                height: 350px;
-                width: 1650px;
-                background: url('images/pic3.png');
-                background-size: cover;
-                background-position: center;
-                padding: 60px 20px 20px 20px;
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-                justify-content: center;
-                text-align: center;
-                align-items: center;
-                margin:0px auto;
-                font-weight:550;
-                }
-
-            .bg1 h1{
-
-                font-size: 5rem;
-                margin-bottom: 0;
-                color: whitesmoke;
-            }
-
-            .bg1 p {
-                color:azure;
-                font-size: 1.5rem;
-                margin-top: 15px;
-                color:whitesmoke;
-                padding:30px;
-                }
-
-            .videos{
-                display:grid;
-                width:900px;
-                height:400px;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows:1fr 1fr;
-
-                gap:10px;
-                align-items:center;
-                justify-items:center;
-            }
-
-            
-            .layout{
-                height:1500px;
-                width:1200px;
-                margin:0px auto;
-                display:grid;
-                grid-template-areas:"header header header""sidebar content content""footer footer footer";
-                align-items:start;
-                justify-items: center;
-                justify-content: center;
-                grid-template-columns:1fr 2fr 1fr;
-                grid-template-rows: 1fr 2fr 1fr;
-                gap:2px;
-            }
-
-            header{
-                height:370px;
-                width:1650px;
-                grid-area:header;
-                border:10px;
-                border-color: black;
-                background-color: gray;
-
-            }
-
-            main{
-                height:1500px;
-                width:1237px;
-                grid-area:content;
-                border:3px;
-                background-color: cornsilk;
-                border-color: cornsilk;
-            }
-
-            aside{
-                height:400px;
-                width:411px;
-                grid-area:sidebar;
-                border:3px;
-                background-color: cornsilk;
-
-            }
-
-            footer{
-                height:200px;
-                width:1200px;
-                grid-area:footer;
-                border:3px;
-                background-color: cornsilk;
-                border-color: black;
-            }
-
-            .icon{
-                font-family: FontAwesome;
-            }
-
-
-            .cards{
-            display:flex;
-            padding:15px;
-        
-        }
-        
-        .card{
-            background-color: gainsboro;
-            width:280px;
-            height:300px;
-            display:flex;   
-            flex-direction:column;
-            margin:20px;
-            -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.12);
-            -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.12);
-            box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.12);
-            border-radius: 10%;
-        }
-
-
-        .card a img {
-            height:125px;
-            position:absolute;
-            clip:rect(0px 235px 200px 00px);
-
-        }
-
-        .card-pic{
-            width:245px;
-            height:135px;
-            margin:0px auto;
-            padding:15px 10px 3px 5px;
-        }
-
-        .title{
-            width:240px;
-            margin:0px auto;
-            padding:16px 10px 10px 10px;
-            font-size: 10px;
-        }
-
-        .title a:hover{
-            /* border-bottom: 1px solid gray; */
-            color:rgb(16, 128, 240);
-            font-size:12px;
-            font-weight:550;
-        }
-
-        /* 论坛区css */
-
-        .aside{
-            display:flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-        }
-
-        .forum{
-            font-size: 20px;
-            margin-bottom: 25px;
-            margin-top: 25px;
-        }
-
-        .study,.fun{
-            display:grid;
-            align-items:start;
-            justify-items: center;
-            grid-template-columns:1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin-bottom:15px;
-
-        }
-        .study-title,.fun-title{
-            margin:5px;
-        }
-
-        .study a{
-            margin:10px;
-            font-size: 15px;
-        }
-        .fun a{
-            margin:12px;
-            font-size: 15px;
-        }
-
-
-        /* 视频区css */
-        .videos{
-            display:grid;
-            grid-template-columns:380px 380px;
-            grid-template-rows:260px 200px;
-            padding:50px 50px;
-            justify-items: center;
-            justify-content: center;
-            align-items: start;
-            }
-
-            .video{
-            width:450px;
-            height:250px;
-            }
-
-
-
-            .video-list{
-            display:flex;
-            margin:0px margin;
-            padding:50px;
-        }
-
-        .video-big{
-            position:relative;
-            width:400px;
-            height:450px;
-            background-color: aqua;
-        }
-
-        .video-big img{
-            margin:15px 25px 5px 25px;
-            width:355px;
-        }
-
-        .video-big a i{
-            position:absolute;
-            top: 85px;
-            left:170px;
-
-        }
-
-        .video-big .more{
-            padding:0px 30px 10px 30px;
-            font-size: 17px;
-        }
-
-        .video-big .vid-name,.info{
-            padding:5px 20px 15px 150px;
-        }
-
-        .video-big:hover img {
-                -webkit-transform:scale(1.05); /* Safari and Chrome */
-                -moz-transform:scale(1.05); /* Firefox */
-                -ms-transform:scale(1.05); /* IE 9 */
-                -o-transform:scale(1.05); /* Opera */
-                transform:scale(1.05);
-            }
-
-        .video-small{
-            display:flex;
-        }
-
-        .video-small{
-            position:relative;
-            display:flex;
-            width:500px;
-            height:150px ;
-            background-color: antiquewhite;
-        }
-        .video-small img{
-            height:125px;
-            margin:10px;
-            padding:8px 5px 8px 13px;
-        }
-
-        .video-small:hover img {
-                -webkit-transform:scale(1.05); /* Safari and Chrome */
-                -moz-transform:scale(1.05); /* Firefox */
-                -ms-transform:scale(1.05); /* IE 9 */
-                -o-transform:scale(1.05); /* Opera */
-                transform:scale(1.05);
-                z-index: 100;
-            }
-
-        .video-small .more{
-            width:200px;
-            height:125px;
-            display:flex;
-            flex-direction: column;
-            float:left;
-            margin:10px;
-            justify-content: space-evenly;
-
-        }
-
-        .video-small a i{
-            position:absolute;
-            top:40px;
-            left:95px;
-            color:#fff;
-        }
-
-        .video-small a i:hover{
-            position:absolute;
-            top:40px;
-            left:95px;
-            color:#fff;
-            opacity: 1;
-            z-index: 500;
-
-        }
-
-        .ted-title{
-            font-size: 45px;
-            width:250px;
-            height:40px;
-            margin:10px auto;
-
-        }
-
-
-            
-
-
-
-    </style>
 </head>
 <body>
     <div class="container">
@@ -471,11 +21,12 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
           <!-- <a href class="logo"><i class="fas-fa-untensils"></i>English</a> -->
     
           <ul class="main-menu">
-            <a href="#home" class="active">home</a>
-            <li><a href="#">bbs</a></li>
-            <li><a href="#">learning</a></li>
-            <li><a href="#">class</a></li>
-            <li><a href="#">user</a></li>
+              <!-- <a href="#home" class="active">home</a> -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="translate.html">Utils</a></li>
+              <li><a href="class.html">Class</a></li>
+              <li><a href="user.html">User</a></li>
           </ul>
     
           <div class="icons">
@@ -498,91 +49,127 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
                 <div class="header">
                     <div class="article-cards">
                         <div class="cards">
+                            <div class="card">
+                                <a href="#"  class="card-pic">
+                                    <img width=250px src="images/article7.jpg" alt="文章1" class="article">
+                                </a>
+                                <li class="title">
+                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Dynamic zero approach underpin growth</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Joint education valuable in Sino-US cooperation: Envoy</a>
+                                </li>
+                         
+                            </div>
+                            <div class="card">
+                                <a href="#"  class="card-pic">
+                                    <img width=250px src="images/chinadaily1.jpg" alt="文章1" class="article">
+                                </a>
+                                <li class="title">
+                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Dynamic zero approach underpin growth</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Joint education valuable in Sino-US cooperation: Envoy</a>
+                                </li>
+                         
+                            </div>
+                            <div class="card">
+                                <a href="#"  class="card-pic">
+                                    <img width=250px src="images/chinadaily2.jpg" alt="文章1" class="article">
+                                </a>
+                                <li class="title">
+                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Dynamic zero approach underpin growth</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Joint education valuable in Sino-US cooperation: Envoy</a>
+                                </li>
+                         
+                            </div>
+                            <div class="card">
+                                <a href="#"  class="card-pic">
+                                    <img width=250px src="images/chinadaily3.png" alt="文章1" class="article">
+                                </a>
+                                <li class="title">
+                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Dynamic zero approach underpin growth</a>
+                                </li>
+                                <li class="title">
+                                    <a href="#">Joint education valuable in Sino-US cooperation: Envoy</a>
+                                </li>
+                         
+                            </div>
 
-                            <div class="card">
-                                <a href="#"  class="card-pic">
-                                    <img width=250px src="images/article7.jpg" alt="文章1" class="article">
-                                </a>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                         
-                            </div>
-                            <div class="card">
-                                <a href="#"  class="card-pic">
-                                    <img width=250px src="images/article7.jpg" alt="文章1" class="article">
-                                </a>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                         
-                            </div>
-                            <div class="card">
-                                <a href="#"  class="card-pic">
-                                    <img width=250px src="images/article7.jpg" alt="文章1" class="article">
-                                </a>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                         
-                            </div>
-                            <div class="card">
-                                <a href="#"  class="card-pic">
-                                    <img width=250px src="images/article7.jpg" alt="文章1" class="article">
-                                </a>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                                <li class="title">
-                                    <a href="#">Young volunteers carry forward inspirational Olympic spirit</a>
-                                </li>
-                         
-                            </div>
+                            <div class="login-page">
+                                <div class="form">
+                                  <form class="register-form">
+                                    <input type="text" placeholder="name"/>
+                                    <input type="password" placeholder="password"/>
+                                    <input type="text" placeholder="grade"/>
+                                    <input type="text" placeholder="class"/>
+                                    <button>create</button>
+                                    <p class="message">Already registered? <a href="#">Sign In</a></p>
+                                  </form>
+                                  <form class="login-form">
+                                    <input type="text" placeholder="username"/>
+                                    <input type="password" placeholder="password"/>
+                                    <button>login</button>
+                                    <p class="message">Not registered? <a href="#">Create an account</a></p>
+                                  </form>
+                                </div>
+                              </div>
                 </div>
             </header>
             <aside>
                 <div class="aside">
-                    <h1 class="forum">论坛</h1>
-                    <div class="study-title">学习资料</div>
-                    <div class="study">
-                        <a href="#" class="fa fa-book">四级资料</a>
-                        <a href="#" class="fa fa-book">六级资料</a>
-                        <a href="#" class="fa fa-book">雅思考试</a>
-                        <a href="#" class="fa fa-book">托福考试</a>
-                        
-                    </div>
-                    <div class="fun-title">兴趣碰撞</div>
-                    <div class="fun">
-                        <a href="#" class="fa fa-globe">电影</a>
-                        <a href="#" class="fa fa-globe">音乐</a>
-                        <a href="#" class="fa fa-globe">科技</a>
-                        <a href="#" class="fa fa-globe">文学</a>
+                    <div id="sideline-aside">
+                        <h1 class="forum">论坛</h1>
+                        <div class="study-title">学习资料</div>
+                        <div class="study">
+                            <a href="#" class="fa fa-book">四级资料</a>
+                            <a href="#" class="fa fa-book">六级资料</a>
+                            <a href="#" class="fa fa-book">雅思考试</a>
+                            <a href="#" class="fa fa-book">托福考试</a>
+                            
+                        </div>
+                        <div class="fun-title">兴趣碰撞</div>
+                        <div class="fun">
+                            <a href="#" class="fa fa-globe">电影</a>
+                            <a href="#" class="fa fa-globe">音乐</a>
+                            <a href="#" class="fa fa-globe">科技</a>
+                            <a href="#" class="fa fa-globe">文学</a>
 
+                        </div>
                     </div>
-                
-
-                </div>
+                </div> 
+                <!-- <div class="login-page">
+                    <div class="form">
+                      <form class="register-form">
+                        <input type="text" placeholder="name"/>
+                        <input type="password" placeholder="password"/>
+                        <input type="text" placeholder="email address"/>
+                        <button>create</button>
+                        <p class="message">Already registered? <a href="#">Sign In</a></p>
+                      </form>
+                      <form class="login-form">
+                        <input type="text" placeholder="username"/>
+                        <input type="password" placeholder="password"/>
+                        <button>login</button>
+                        <p class="message">Not registered? <a href="#">Create an account</a></p>
+                      </form>
+                    </div>
+                  </div> -->
+            
             </aside>
             <main>
                 <div class="main">
@@ -593,19 +180,21 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
                             <div class="video-big">
                                 <a href="#">
                                     <i class="fa fa-play-circle-o fa-4x" style="color: #fff"></i>
-                                    <img src="images/ted3.jpg" />
+                                    <img src="images/ted6.jpg" />
                                 </a>
-                                <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                <h3 class="vid-name"><a href="#">An Olympic champion's mindset for overcoming fear</a></h3>
                                 <div class="info">
                                     <span><i class="fa fa-calendar"></i>25/3/2015</span> 
                                 </div>
-                                <p class="more">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</p>
+                                <p class="more">
+                                    Getting pregnant as a track and field athlete is often called the "kiss of death" -- a sign your athletic career will soon end. Olympic champion, entrepreneur and proud mother Allyson Felix thinks it shouldn't be that way. 
+                                </p>
                             </div>
                             <div class="videos-small">
                                 <div class="video-small">
                                     <a href="#">
                                         <i class="fa fa-play-circle-o fa-4x" style="color: rgb(255, 255, 255)"></i>
-                                        <img src="images/ted3.jpg" />
+                                        <img src="images/ted2.jpg" />
                                     </a>
                                     <div class="more">
                                         <h3 class="vid-name"><a href="#">Video's Name</a></h3>
@@ -630,6 +219,45 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
                                 <div class="video-small">
                                     <a href="#">
                                         <i class="fa fa-play-circle-o fa-4x" style="color: #fff"></i>
+                                        <img src="images/ted4.jpg" />
+                                    </a>
+                                    <div class="more">
+                                        <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <p>An Olympic champion's mindset for overcoming fear</p>
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <div class="videos-small">
+                                <div class="video-small">
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-4x" style="color: rgb(255, 255, 255)"></i>
+                                        <img src="images/ted5.jpg" />
+                                    </a>
+                                    <div class="more">
+                                        <h3 class="vid-name"><a href="#">The crime-fighting power of cross-border investigative journalism</a></h3>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <p>An Olympic champion's mindset for overcoming fear</p>
+                                    </div>
+                
+                                </div>
+                                <div class="video-small">
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-4x"></i>
+                                        <img src="images/ted1.jpg" />
+                                    </a>
+                
+                                    <div class="more">
+                                        <h3 class="vid-name"><a href="#">Video's Name</a></h3>
+                                        <span><i class="fa fa-calendar"></i>25/3/2015</span>
+                                        <p>An Olympic champion's mindset for overcoming fear</p>
+                                    </div>
+                
+                                </div>
+                                <div class="video-small">
+                                    <a href="#">
+                                        <i class="fa fa-play-circle-o fa-4x" style="color: #fff"></i>
                                         <img src="images/ted3.jpg" />
                                     </a>
                                     <div class="more">
@@ -642,24 +270,7 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
                             </div>
                         </div>
                     </div>
-                    <div class="videos">
-                        <div class="video video1">
-                          <iframe src="//player.bilibili.com/player.html?aid=4190492&bvid=BV13s411X7Hc&cid=6771553&page=1&as_wide=0&high_quality=1&danmaku=0" scrolling="auto" border="0"  width="80%" height="250" frameborder="0" >
-                          </iframe>
-                        </div>
-                        <div class="video video2">
-                          <iframe src="//player.bilibili.com/player.html?aid=4190492&bvid=BV13s411X7Hc&cid=6771553&page=1&as_wide=0&high_quality=1&danmaku=0" scrolling="yes" border="0"  width="80%" height="250" frameborder="0" >
-                          </iframe>
-                        </div>
-                        <div class="video video3">
-                          <iframe src="//player.bilibili.com/player.html?aid=4190492&bvid=BV13s411X7Hc&cid=6771553&page=1&as_wide=0&high_quality=1&danmaku=0" scrolling="yes" border="0"  width="80%" height="250" frameborder="0" >
-                          </iframe>
-                      </div>
-                        <div class="video video4">
-                          <iframe src="//player.bilibili.com/player.html?aid=4190492&bvid=BV13s411X7Hc&cid=6771553&page=1&as_wide=0&high_quality=1&danmaku=0" scrolling="yes" border="0"  width="80%" height="250" frameborder="0" >
-                           </iframe>
-                        </div>
-                    </div>
+
                 </div>
             </main>
             <footer>
@@ -672,4 +283,10 @@ background: linear-gradient(90deg, rgba(255,189,146,0.88) 16%, rgba(239,147,0,0.
         </div>
 
 </body>
+
+    <script type="text/javascript">
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+    </script>
 </html>
